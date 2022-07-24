@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home work</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <h1 >HomeWork</h1>
+
+    <pre>
+1. create a new project
+        2. create the following inputs
+            - name
+            - age 
+            - color
+            - country
+            - gender (bonus - radio)
+        3. on submit show the user a bootstrap card 
+        with backround as set by the user with his 
+        information
+        4. clear the data after each submit
+        5. don't insert the bootstrap card if the 
+        information set by the user is not logical 
+        for example age 0, name.length 2
+        
+        ** with each submit insert a new card without deleting previous cards
+        
+        BONUS: 
+        read about window.alert function and show the user the errors he has done in case (section 5) or show it in some bootstrap alert </pre>
+        <div class=" flex-container ;" id="div" style="text-align:center ;">
+            <label for="name">name:</label>
+            <input type="text" id="name">
+
+            <label for="age">age:</label>
+            <input type="number" id="age">
+           
+            <label for="color">favorite color:</label>
+            <input type="color" id="color-fav">
+            
+            <label for="country">country</label>
+            <select class="form-select"   style="width:200px ;" aria-label="Default select example" id="country">
+              <option value=""></option>
+                <option value="israel">israel</option>
+                <option value="usa">usa</option>
+                <option value="spain">spain</option>
+                <option value="england">england</option>
+                <option value="italy">italy</option>
+              </select>
+        
+
+            <label for="male">Male</label>
+            <input type="radio"  id="male" name="gender" value="Male"
+              checked
+            />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female"
+            />
+           <button onclick="handleButton()">submit</button>
+           <button onclick="resetButton()">reset</button>
+        </div>
+        <div id="cards-container">
+       <!--<div class="card" id="card" style="width: 18rem; background-color: yellow;">
+          <div class="card-body">
+            <h5 class="card-title" id="card-title">name(age):</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="my-country">country</li>
+            <li class="list-group-item" id="my-gender">gender</li>
+          </ul>
+        </div>--> 
+      </div>
+</body>
+</html>
